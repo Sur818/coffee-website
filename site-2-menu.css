@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif; 
+  -webkit-tap-highlight-color: transparent;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+  .coffee-images-container{
+    width:95vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+   .mySlides {
+    display:none;
+   }  
+
+.coffee-images-container img {
+vertical-align: middle;
+width: 100%;
+height:100vh;
+object-fit: cover;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.coffee-images-container .slideshow-container {
+  width:inherit;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.coffee-images-container .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+.coffee-images-container .next {
+  right:0px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.coffee-images-container .prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.coffee-images-container .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.coffee-images-container .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.coffee-images-container .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.coffee-images-container .active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.coffee-images-container .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  } 
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.main-container {
+  width: 85vw;
+  display: flex;
+  flex-direction: column;
+  margin:70px auto 0 auto;
+}
+
+.main-heading{
+  font-size:50px;
+  margin-bottom: 50px;
+  font-family: 'Rokkitt', serif;
+  /* text-shadow: 2px 2px brown; */
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 40px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.line {
+  height: 2px;
+  /* background-color: #c0c0c0; */
+  background-color: rgb(232, 169, 87);
+  width: inherit;
+  margin: 15px auto 20px auto;
+  border-radius: 5px;
+}
+
+  .menu-container{
+  display: flex;
+  flex-direction: column;
+  width:inherit;
+  margin: 50px auto;
+  justify-content: center;
+  /* align-items: center; */
+ 
+}  
+
+.menu-container .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+  gap:1.5rem;
+}
+
+
+.menu-container .box-container .box{
+  padding:2rem 2.5rem;
+  text-align: center;
+  border:1px solid black;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  transition:0.3s;
+}
+
+.menu-container .box-container .box img{
+height:10rem;
+width:10rem;
+border-radius:50%;
+background-size: cover;
+object-fit: cover;
+background-repeat: no-repeat;
+background-position:center;
+}
+
+
+.menu-container .box-container .box h3{
+  color:black;
+  font-size:1.5rem;
+  padding:1rem 0;
+  text-transform:uppercase;
+}
+
+.menu-container .box-container .box .price{
+  color:black;
+  font-size:2rem;
+  padding:0.5rem 0;
+  margin-bottom: 15px;
+}  
+
+.menu-container .box-container .box .price span{
+font-size: 1.5rem;
+text-decoration: line-through;
+}
+
+.menu-container .box-container .box:hover{
+  background-color: black;
+}
+
+
+.menu-container .box-container .box:hover> *{
+  color:white;
+}
+
+.menu-container .box-container .box:hover img{
+  outline:3px solid white;
+}
+
+.menu-container .box-container .box .btn{
+  font-size:1rem;
+  font-weight: 500;
+  color:white;
+  padding:10px 15px;
+  background-color: #6f4e37e7;
+  border-radius:2px;
+  transition: all 0.3s linear;
+}
+
+.menu-container .box-container .box .btn:hover{
+  background-color: #6f4e3784;
+}
+
+
+
+
+
+
+
+
+
+
+
+

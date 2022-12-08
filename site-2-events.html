@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <link rel="stylesheet" href="site-2-nav.css">
+      <link rel="stylesheet" href="site-2-footer.css">
+     <link rel="stylesheet" href="site-2-events.css">
+    <link rel="stylesheet" href="site-2-events-resp.css">  
+</head>
+<body>
+    <header id="header">
+        <div class="logo-image">
+            <img src="https://tinyurl.com/bdnfazdb" alt="cofee-logo">
+        </div>
+        <nav id="navigation">
+            <ol id="nav-list">
+              <li class="cart-icon">
+                <div class="cart-btn-section">
+                  <!-- <i class="fa fa-shopping-cart"></i> -->
+                  <i class="fa fa-shopping-cart" id="cart-btn" aria-hidden="true"></i>
+                </div>
+              </li>
+                <li>
+                    <a href="javascript:void(0);" class="bar-icon" id="bar-button" onclick="openNav(this.id)">
+                      <i class="fa fa-bars"></i>
+                      <!-- <i class="fa-regular fa-xmark"></i> -->
+                    </a>
+                  </li>
+                <li class="active page-links"><a href="site-2.html">Home</a></li>
+                <li class="page-links"><a href="site-2-menu.html">Menu</a></li>
+                <li class="page-links"><a href="site-2-events.html">Events</a></li>
+                <li class="page-links"><a href="site-2-ourteam.html">Our Team</a></li>
+                <li class="page-links"><a href="site-2-contactus.html">Contact Us</a></li>
+            </ol>
+        </nav>
+    </header>
+  <section class="tab-section">
+    <div class="events-button-section">
+      <button class="btn" id='completed-event-btn' onclick="openEvents('completed', this.id)">completed</button>
+      <button class="btn" id='current-event-btn' onclick="openEvents('current', this.id)">current</button>
+      <button class="btn active-event" id='upcoming-event-btn'  onclick="openEvents('upcoming', this.id)">upcoming</button>
+    </div>
+  </section>
+<main class="main-container">
+  <section class="events-container">
+  <!---------------------------------completed-events-section------------------------------>
+    <div id="completed" class="events this-event completed-events-section" style="display:none">
+      <h2 class="section-heading">completed events</h2>
+      <div class="event-box">
+        <div class="image-cnt">
+          <div class="slideshow-container">
+          <!-- <img src="" alt="event-img"> -->
+          <div class="mySlides fade">
+            <img src="https://tinyurl.com/5xuu7cy5" alt="">
+            <div class="text">Caption Text</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <img src="https://tinyurl.com/5n72wsjz" alt="">
+            <div class="text">Caption Two</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <img src="https://tinyurl.com/ye3hxzxp" alt="">
+            <div class="text">Caption Three</div>
+          </div>
+        </div>
+        <div style="text-align:center" class="dot-section">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        </div>
+
+        <div class="about-event-cnt">
+          <h1 class="about-event-heading">Events In Pennsylvania</h1>
+          <div class="line"></div>
+          <p class="about-event-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus non sapiente aut reiciendis iste nisi illum nemo inventore officia itaque.</p>
+           <p class="date">24/11/1998</p>
+          <div class="btn-sec">
+            <button class="btn details-btn">Details</button>
+            <button class="btn book-ticket-btn">Book Ticket</button>
+          </div>
+        </div>
+          
+      </div>
+      
+
+      <div class="event-box">
+        <div class="image-cnt">
+          <div class="slideshow-container">
+          <!-- <img src="" alt="event-img"> -->
+          <div class="mySlides fade">
+            <img src="https://tinyurl.com/y6hs32pb" alt="">
+            <div class="text">Caption Text</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <img src="https://tinyurl.com/39tk2zah" alt="">
+            <div class="text">Caption Two</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <img src="https://tinyurl.com/2tw3f4se" alt="">
+            <div class="text">Caption Three</div>
+          </div>
+        </div>
+        <div style="text-align:center" class="dot-section">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        </div>
+
+        <div class="about-event-cnt">
+          <h1 class="about-event-heading">Events In Maxico</h1>
+          <div class="line"></div>
+          <p class="about-event-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus non sapiente aut reiciendis iste nisi illum nemo inventore officia itaque.</p>
+          <p class="date">24/11/1998</p>
+          <div class="btn-sec">
+            <button class="btn details-btn">Details</button>
+            <button class="btn book-ticket-btn">Book Ticket</button>
+          </div>
+        </div>
+          
+      </div>
+     
+      <div class="event-box">
+        <div class="image-cnt">
+          <div class="slideshow-container">
+          <!-- <img src="" alt="event-img"> -->
+          <div class="mySlides fade">
+            <img src="https://tinyurl.com/2s3zcku6" alt="">
+            <div class="text">Caption Text</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <img src="https://tinyurl.com/597bxbwr" alt="">
+            <div class="text">Caption Two</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <img src="https://tinyurl.com/322tzumu" alt="">
+            <div class="text">Caption Three</div>
+          </div>
+        </div>
+        <div style="text-align:center" class="dot-section">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        </div>
+
+        <div class="about-event-cnt">
+          <h1 class="about-event-heading">Events In India</h1>
+          <div class="line"></div>
+          <p class="about-event-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus non sapiente aut reiciendis iste nisi illum nemo inventore officia itaque.</p>
+          <p class="date">24/11/1998</p>
+          <div class="btn-sec">
+            <button class="btn details-btn">Details</button>
+            <button class="btn book-ticket-btn">Book Ticket</button>
+          </div>
+        </div>
+          
+      </div>
+      </div>
+      
+
+      <!---------------------------------------------current-events-section---------------------------->
+      <div id="current" class="events this-event current-events-section" style="display:none">
+        <h2 class="section-heading">Current events</h2>
+        <div class="event-box">
+          <div class="image-cnt">
+            <div class="slideshow-container">
+            <!-- <img src="" alt="event-img"> -->
+            <div class="mySlides fade">
+              <img src="https://tinyurl.com/5xuu7cy5" alt="">
+              <div class="text">Caption Text</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://tinyurl.com/5n72wsjz" alt="">
+              <div class="text">Caption Two</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://tinyurl.com/ye3hxzxp" alt="">
+              <div class="text">Caption Three</div>
+            </div>
+          </div>
+          <div style="text-align:center" class="dot-section">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+          </div>
+
+          <div class="about-event-cnt">
+            <h1 class="about-event-heading">Events In Pennsylvania</h1>
+            <div class="line"></div>
+            <p class="about-event-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus non sapiente aut reiciendis iste nisi illum nemo inventore officia itaque.</p>
+             <p class="date">24/11/1998</p>
+            <div class="btn-sec">
+              <button class="btn details-btn">Details</button>
+              <button class="btn book-ticket-btn">Book Ticket</button>
+            </div>
+          </div>
+            
+        </div>
+        
+
+        <div class="event-box">
+          <div class="image-cnt">
+            <div class="slideshow-container">
+            <!-- <img src="" alt="event-img"> -->
+            <div class="mySlides fade">
+              <img src="https://tinyurl.com/y6hs32pb" alt="">
+              <div class="text">Caption Text</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://tinyurl.com/39tk2zah" alt="">
+              <div class="text">Caption Two</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://tinyurl.com/2tw3f4se" alt="">
+              <div class="text">Caption Three</div>
+            </div>
+          </div>
+          <div style="text-align:center" class="dot-section">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+          </div>
+
+          <div class="about-event-cnt">
+            <h1 class="about-event-heading">Events In Maxico</h1>
+            <div class="line"></div>
+            <p class="about-event-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus non sapiente aut reiciendis iste nisi illum nemo inventore officia itaque.</p>
+            <p class="date">24/11/1998</p>
+            <div class="btn-sec">
+              <button class="btn details-btn">Details</button>
+              <button class="btn book-ticket-btn">Book Ticket</button>
+            </div>
+          </div>
+            
+        </div>
+       
+        <div class="event-box">
+          <div class="image-cnt">
+            <div class="slideshow-container">
+            <!-- <img src="" alt="event-img"> -->
+            <div class="mySlides fade">
+              <img src="https://tinyurl.com/2s3zcku6" alt="">
+              <div class="text">Caption Text</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://tinyurl.com/597bxbwr" alt="">
+              <div class="text">Caption Two</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://tinyurl.com/322tzumu" alt="">
+              <div class="text">Caption Three</div>
+            </div>
+          </div>
+          <div style="text-align:center" class="dot-section">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+          </div>
+
+          <div class="about-event-cnt">
+            <h1 class="about-event-heading">Events In India</h1>
+            <div class="line"></div>
+            <p class="about-event-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus non sapiente aut reiciendis iste nisi illum nemo inventore officia itaque.</p>
+            <p class="date">24/11/1998</p>
+            <div class="btn-sec">
+              <button class="btn details-btn">Details</button>
+              <button class="btn book-ticket-btn">Book Ticket</button>
+            </div>
+          </div>
+            
+        </div>
+      </div>
+      
+      <!--------------------------upcoming-events-section---------------->
+      <div id="upcoming" class="events this-event upcoming-events-section">
+        <h2 class="section-heading">upcoming events</h2>
+        <div class="event-box">
+          <div class="image-cnt">
+            <div class="slideshow-container">
+            <!-- <img src="" alt="event-img"> -->
+            <div class="mySlides fade">
+              <img src="https://tinyurl.com/5xuu7cy5" alt="">
+              <div class="text">Caption Text</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://tinyurl.com/5n72wsjz" alt="">
+              <div class="text">Caption Two</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://tinyurl.com/ye3hxzxp" alt="">
+              <div class="text">Caption Three</div>
+            </div>
+          </div>
+          <div style="text-align:center" class="dot-section">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+          </div>
+
+          <div class="about-event-cnt">
+            <h1 class="about-event-heading">Events In Pennsylvania</h1>
+            <div class="line"></div>
+            <p class="about-event-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus non sapiente aut reiciendis iste nisi illum nemo inventore officia itaque.</p>
+             <p class="date">24/11/1998</p>
+            <div class="btn-sec">
+              <button class="btn details-btn">Details</button>
+              <button class="btn book-ticket-btn">Book Ticket</button>
+            </div>
+          </div>
+            
+        </div>
+        
+
+        <div class="event-box">
+          <div class="image-cnt">
+            <div class="slideshow-container">
+            <!-- <img src="" alt="event-img"> -->
+            <div class="mySlides fade">
+              <img src="https://tinyurl.com/y6hs32pb" alt="">
+              <div class="text">Caption Text</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://tinyurl.com/39tk2zah" alt="">
+              <div class="text">Caption Two</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://tinyurl.com/2tw3f4se" alt="">
+              <div class="text">Caption Three</div>
+            </div>
+          </div>
+          <div style="text-align:center" class="dot-section">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+          </div>
+
+          <div class="about-event-cnt">
+            <h1 class="about-event-heading">Events In Maxico</h1>
+            <div class="line"></div>
+            <p class="about-event-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus non sapiente aut reiciendis iste nisi illum nemo inventore officia itaque.</p>
+            <p class="date">24/11/1998</p>
+            <div class="btn-sec">
+              <button class="btn details-btn">Details</button>
+              <button class="btn book-ticket-btn">Book Ticket</button>
+            </div>
+          </div>
+            
+        </div>
+       
+        <div class="event-box">
+          <div class="image-cnt">
+            <div class="slideshow-container">
+            <!-- <img src="" alt="event-img"> -->
+            <div class="mySlides fade">
+              <img src="https://tinyurl.com/2s3zcku6" alt="">
+              <div class="text">Caption Text</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://tinyurl.com/597bxbwr" alt="">
+              <div class="text">Caption Two</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://tinyurl.com/322tzumu" alt="">
+              <div class="text">Caption Three</div>
+            </div>
+          </div>
+          <div style="text-align:center" class="dot-section">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+          </div>
+
+          <div class="about-event-cnt">
+            <h1 class="about-event-heading">Events In India</h1>
+            <div class="line"></div>
+            <p class="about-event-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus non sapiente aut reiciendis iste nisi illum nemo inventore officia itaque.</p>
+            <p class="date">24/11/1998</p>
+            <div class="btn-sec">
+              <button class="btn details-btn">Details</button>
+              <button class="btn book-ticket-btn">Book Ticket</button>
+            </div>
+          </div>
+            
+        </div>
+        
+      </div>
+  </section>
+</main>
+  <!--------------------------footer-sectrion------------------->
+  <footer>
+  <section class="contact-us-container" id="contact-us">
+    <h3 class="section-heading">
+      Contact Us
+    </h3>
+    <div class="line"> </div>
+  
+  <div class="contact-social-outer">
+      <section class="contact-detail-cnt">
+          <section class="contact-address-cnt">
+              <h1 class="primary-heading">
+                  Address: 
+              </h1>
+              <p>
+                  Atarra Coffee Stall <br>
+                  REC Banda Campus <br>
+                  Banda, Uttar Pradesh - 201210
+              </p> 
+          </section>
+          <section class="contact-email-cnt">
+              <h1 class="primary-heading">
+                  Email: 
+              </h1>
+              <p>
+                  ss1070075@gmail.com 
+              </p>
+          </section>
+      </section>
+  
+      <section class="contact-links-cnt">
+        <h1 Class="primary-heading ">Some Links:</h1>
+  <p>
+    <a href="">F.A.Q</a>
+  </p>
+  <P><a href="">Cookies Policy</a></P>
+  <p>
+   <a href=""> Terms of Service</a>
+  </p>
+  <p><a href="">Support</a></p>
+      </section>
+  
+      <section class="contact-social-cnt">
+          <h1 class="primary-heading">
+              Follow Us:
+          </h1>
+          <div class="social-logo-cnt">
+              <a href="#"><i class="fa fa-linkedin-square linkedin-logo" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-facebook-square facebook-logo" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-instagram instagram-logo" aria-hidden="true"></i></a>
+          </div>
+      </section>
+  
+  </div></section>
+  <section class="copyright-info">
+    © 2022 | Atarra Coffee Stall
+  </section>
+   </div>
+  
+</footer>
+<script src="site-2-events.js"></script>
+    <script src="site-2-nav-resp.js"></script>
+</body>
+</html>

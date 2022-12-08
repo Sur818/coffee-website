@@ -1,0 +1,128 @@
+@media(max-width:1250px){
+    .main-container{
+        width:80vw;
+    }
+
+    .events-container .this-event .event-box{
+        width:85%;
+    }
+
+}
+
+@media(max-width:1000px){
+    .main-container{
+        width:85vw;
+    }
+
+    .events-container .this-event .event-box{
+        width:90%;
+    }
+    .events-container .this-event .section-heading{
+        font-size: 1.7rem;
+    }
+
+    .events-container .this-event .event-box  h1{
+        font-size: 1.4rem;
+    }
+    .events-container .this-event .event-box  .about-event-cnt .btn-sec .btn{
+        font-size: 1.1rem;
+    }
+
+
+
+}
+
+@media(max-width:900px){
+    .main-container{
+        width:95vw;
+    }
+
+    .events-container .this-event  .event-box{
+        width:95%;
+    }
+}
+
+
+@media(max-width:700px){
+    .main-container{
+        width:100vw;
+    }
+    .events-container .this-event .event-box .image-cnt{
+        height:210px;
+    }
+
+    .events-container .this-event .event-box{
+        width:60%;
+        flex-direction: column;
+    }
+
+    .events-container .this-event .event-box  .about-event-cnt .btn-sec{
+        font-size: 1.1rem;
+        margin: 30px auto 0px 0px;
+    }
+
+    .events-container .this-event .event-box .image-cnt img{
+        border-radius:5px 5px 0px 0px;
+   
+} 
+.events-container .this-event .event-box  .about-event-cnt .date{
+    margin-top: 10px;
+}
+.events-container .this-event  .event-box .about-event-cnt{
+    margin-top: 20px;
+}
+
+.events-container .this-event .event-box  .about-event-cnt .btn-sec{
+    justify-content:space-evenly;
+}
+
+}
+
+
+
+@media(max-width:560px){
+    .events-container .this-event .event-box{
+        width:90%;
+        flex-direction: column;
+    }
+    .events-container .this-event .event-box  .about-event-cnt .btn-sec{
+        justify-content:space-evenly;
+    }
+    
+
+}
+
+@media(max-width:360px){
+
+    html{
+        font-size:63%;
+    }
+    .events-container .this-event .event-box .image-cnt{
+        height:150px;
+    }
+
+    .events-container .this-event .event-box  .about-event-cnt .btn-sec{
+        margin:20px auto 0px 0px;
+    }
+
+    .events-container .this-event .event-box  .about-event-cnt .btn-sec .btn{
+        font-size: 1rem;
+
+    }
+    .events-container .this-event .event-box  .about-event-cnt .btn-sec .details-btn{
+     padding:10px 30px;
+    }
+
+    .events-container .this-event  .event-box  .about-event-cnt .btn-sec .book-ticket-btn{
+        padding:10px 20px;
+      }
+
+
+.events-container .this-event .event-box  .about-event-cnt .date{
+    margin-top: 10px;
+}
+
+.events-container .this-event .event-box  .about-event-cnt .about-event-para{
+    min-height: auto;
+}
+}

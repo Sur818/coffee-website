@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="site-2-nav.css">
+    <link rel="stylesheet" href="site-2-footer.css">
+    <link rel="stylesheet" href="site-2-cart.css">
+    <link rel="stylesheet" href="site-2-cart-resp.css">
+</head>
+<body>
+    <header id="header">
+        <div class="logo-image">
+            <img src="https://tinyurl.com/bdnfazdb" alt="cofee-logo">
+        </div>
+        <nav id="navigation">
+            <ol id="nav-list">
+              <li class="cart-icon">
+                <div class="cart-btn-section">
+                  <!-- <i class="fa fa-shopping-cart"></i> -->
+                  <i class="fa fa-shopping-cart" id="cart-btn" aria-hidden="true"></i>
+                </div>
+              </li>
+                <li>
+                    <a href="javascript:void(0);" class="bar-icon" id="bar-button" onclick="openNav(this.id)">
+                      <i class="fa fa-bars"></i>
+                      <!-- <i class="fa-regular fa-xmark"></i> -->
+                    </a>
+                  </li>
+                <li class="active page-links"><a href="site-2.html">Home</a></li>
+                <li class="page-links"><a href="site-2-menu.html">Menu</a></li>
+                <li class="page-links"><a href="site-2-events.html">Events</a></li>
+                <li class="page-links"><a href="site-2-ourteam.html">Our Team</a></li>
+                <li class="page-links"><a href="site-2-contactus.html">Contact Us</a></li>
+            </ol>
+        </nav>
+    </header>
+
+
+    <main class="container">
+<div class="card" id="item">
+    <img src="https://tinyurl.com/ye5xv3zm" alt="">
+    <div class="title">Red Heels</div>
+    <div>
+        <label for="">SIZE</label>
+        <select name="" id="">
+            <option value="30">30</option>
+            <option value="32">32</option>
+            <option value="34">34</option>
+            <option value="36">36</option>  
+        </select>
+    </div>
+    <button onclick="addToCart(item)">Add To Cart</button>
+</div>
+ 
+<div class="card" id="item2">
+    <img src="https://tinyurl.com/4s4yzkrb" alt="">
+    <div class="title">White Heels</div>
+    <div>
+        <label for="">SIZE</label>
+        <select name="" id="">
+            <option value="30">30</option>
+            <option value="32">32</option>
+            <option value="34">34</option>
+            <option value="36">36</option>  
+        </select>
+    </div>
+    <button onclick="addToCart(item2)">Add To Cart</button>
+</div>
+    </main>
+
+<div class="cart" id="cart">
+    <div class="title">CART</div><hr>
+    <div id="title"></div>
+
+</div>
+    <!-- <footer>
+    <section class="contact-us-container" id="contact-us">
+        <h3 class="section-heading">
+          Contact Us
+        </h3>
+        <div class="line"> </div>
+      
+      <div class="contact-social-outer">
+          <section class="contact-detail-cnt">
+              <section class="contact-address-cnt">
+                  <h1 class="primary-heading">
+                      Address: 
+                  </h1>
+                  <p>
+                      Atarra Coffee Stall <br>
+                      REC Banda Campus <br>
+                      Banda, Uttar Pradesh - 201210
+                  </p> 
+              </section>
+              <section class="contact-email-cnt">
+                  <h1 class="primary-heading">
+                      Email: 
+                  </h1>
+                  <p>
+                      ss1070075@gmail.com 
+                  </p>
+              </section>
+          </section>
+      
+          <section class="contact-links-cnt">
+            <h1 Class="primary-heading ">Some Links:</h1>
+      <p>
+        <a href="">F.A.Q</a>
+      </p>
+      <P><a href="">Cookies Policy</a></P>
+      <p>
+       <a href=""> Terms of Service</a>
+      </p>
+      <p><a href="">Support</a></p>
+          </section>
+      
+          <section class="contact-social-cnt">
+              <h1 class="primary-heading">
+                  Follow Us:
+              </h1>
+              <div class="social-logo-cnt">
+                  <a href="#"><i class="fa fa-linkedin-square linkedin-logo" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-facebook-square facebook-logo" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-instagram instagram-logo" aria-hidden="true"></i></a>
+              </div>
+          </section>
+      
+      </div></section>
+      <section class="copyright-info">
+        © 2022 | Atarra Coffee Stall
+      </section>
+       </div>
+    </footer> -->
+    <script src="site-2-cart.js"></script>  
+</body>
+</html>

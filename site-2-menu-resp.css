@@ -1,0 +1,79 @@
+@media(max-width:1250px){
+    .main-container {
+        width: 85vw;
+      }
+}
+@media(max-width:1000px){
+    .main-container {
+        width: 85vw;
+      }
+
+    .menu-container .box-container{
+        grid-template-columns: repeat(auto-fit, minmax(20rem,1fr)); 
+    }
+}
+
+
+@media(max-width:900px){
+    .main-container {
+        width: 85vw;
+      } 
+
+    .menu-container .box-container{
+        grid-template-columns: repeat(auto-fit, minmax(18rem,1fr)); 
+    }
+
+    .coffee-images-container img{
+        height:50vh;
+    }
+    .menu-container .box-container .box{
+        padding:1.5rem;
+    }
+    .menu-container .box-container .box img{
+        height:10rem;
+        width:10rem;
+    }
+    .menu-container .box-container .box h3{
+        font-size:1.2rem;
+    }
+
+    .menu-container .box-container .box .price{
+        font-size:1.5rem;
+    }
+    .menu-container .box-container .box .price span{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width:750px){
+    .main-container {
+        width: 90vw;
+      }
+
+.coffee-images-container img{
+    height:40vh;
+}
+}
+
+@media(max-width:500px){
+    .menu-container .box-container{
+        grid-template-columns: repeat(auto-fit, minmax(15rem,1fr)); 
+    }
+    .menu-container .box-container .box{
+        padding:2rem;
+    }
+
+    .menu-container .box-container .box h3{
+        font-size:1.5rem;
+    }
+
+    .menu-container .box-container .box .price{
+        font-size:2rem;
+    }
+
+    .menu-container .box-container .box .price span{
+        font-size: 1.5rem;
+    }
+    
+
+}

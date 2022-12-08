@@ -1,0 +1,140 @@
+@media(max-width:1250px){
+    .main-container{
+        width:90vw;
+    }
+   
+    .about-our-service-cnt  .image-cnt img{
+        width:90%
+    }
+    
+  .about-our-service-cnt .about-para-container p{
+    line-height: 1.5rem;
+  }
+
+    .about-product-cnt .box .about-para-cnt p{
+        line-height:1.5rem;
+    } 
+    .about-product-cnt .box .about-para-cnt{
+        padding-left:12px;
+        padding-right: 15px;
+    }
+    .about-product-cnt img{
+        height: 17rem;
+    }
+}
+
+@media(max-width:1000px){
+    .main-container{
+        width:95vw;
+    }
+
+    .about-our-service-cnt .about-container{
+        align-items: flex-start;
+    }
+
+    .about-our-service-cnt .about-container{
+        margin: 30px auto;
+    }
+    .about-our-service-cnt .about-para-container p{
+        padding: 0px 10px;
+    }
+
+
+}
+
+@media(max-width:900px){
+    .main-container{
+        width:90vw;
+    }
+
+    .about-our-service-cnt .about-para-container p{
+        padding: 0px 0px 0px 10px;
+    }
+
+     .about-product-cnt .content-box-cnt>div{
+        width:47%;
+      }
+    .about-product-cnt img{
+        width:100%;
+        height: 17rem;
+    }
+    .about-product-cnt .content-box-cnt .box{
+        margin-top: 10px;
+        margin-bottom:30px;
+    }  
+    
+    .section-heading{
+        font-size: 30px;
+    }
+    .main-heading{
+        font-size:40px;
+    }
+    .about-social-cnt .content-box  .box p{
+        font-size: 0.9rem;
+      }
+
+    
+}
+
+@media(max-width:700px){
+    .about-product-cnt .content-box-cnt>div{
+        width:90%;
+      }
+      .about-product-cnt .content-box-cnt .box{
+        margin:30px auto 60px auto;
+        /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+      }
+
+      .about-our-service-cnt  .about-container>div{
+        width:90%;
+        margin:20px auto;
+    }
+       .about-our-service-cnt .about-para-container p{
+        padding: 0px;
+    }
+
+    .about-our-service-cnt  .image-cnt img{
+        width:100%
+    }
+    .about-social-cnt .content-box>div{
+        width:100%;
+        margin :0px auto 30px auto;
+      }
+
+      #underline {
+        position: relative;
+      }
+      
+      #underline::before {
+        content: "";
+        background-color:#6F4E37;
+        transition: 0.4s ease-out;
+        width:0%;
+        height: 3px;
+        border-radius: 5px;
+        position: absolute;
+        left: 0;
+        bottom:-5px;
+      }
+      
+      #underline:hover::before {
+        width: 100%;
+      } 
+    
+    
+    
+      
+
+
+
+}
+
+@media(max-width:500px){
+    .about-product-cnt .content-box-cnt>div{
+        width:100%;
+      }
+      .about-our-service-cnt  .about-container>div{
+        width:100%;
+        margin:20px auto;
+    }
+}

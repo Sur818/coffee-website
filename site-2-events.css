@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif; 
+  -webkit-tap-highlight-color: transparent;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.tab-section{
+  margin-top:54px;
+  width:100vw;
+  background: lightgrey;
+}
+
+.tab-section .events-button-section{
+width:inherit;
+display: flex;
+justify-content:space-around;
+align-items: center;
+}
+
+
+.tab-section .events-button-section .btn{
+border:none;
+outline: none;
+cursor: pointer;
+font-size: 1.3rem;
+font-weight: bold;
+font-family: 'Lato', sans-serif;
+background-color:transparent;
+text-transform: capitalize;
+padding:10px 5vw;
+transition: all 0.3s linear;
+}
+
+
+ .tab-section .events-button-section .btn:hover{
+  background-color: #6f4e3779;
+  color:whitesmoke;
+} 
+
+.tab-section .events-button-section .btn:focus{
+  background-color: #6F4E37;
+  color:white;
+} 
+
+.active-event{
+  background-color: #6F4E37;
+  color:white;
+}
+
+
+.main-container {
+    width:75vw;
+    display: flex;
+    flex-direction: column;
+    margin:70px auto 0 auto;
+  }
+
+  .section-heading {
+    font-size: 40px;
+    text-transform: capitalize;
+    text-align: left;
+  }
+
+  
+  .line {
+    height: 2px;
+    /* background-color: #c0c0c0; */
+    background-color: rgb(232, 169, 87);
+    width: inherit;
+    margin: 15px auto 20px auto;
+    border-radius: 5px;
+  }
+
+
+
+  .events-container{
+   width:inherit;
+   display: flex;
+   margin:60px auto;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color:lightgray;
+  }
+
+
+  .events-container .upcoming-events-section{
+    width:100%;
+    display: flex;
+    margin:auto;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .events-container .this-event .section-heading{
+     width:100%;
+     padding:7px 0px;
+     text-transform: capitalize;
+     text-align: center;
+     font-size: 2rem;
+    /* text-decoration:underline; */
+    background-color: aquamarine;
+  }
+
+  
+  .events-container .this-event .event-box{
+     width:75%;
+     margin:30px auto;
+     display: flex;
+     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+     border-radius:5px;
+     background-color: white;
+  }
+
+  
+  .events-container .this-event .event-box>div{
+    width:50%;
+  }
+
+  .events-container .this-event .event-box .image-cnt{
+    width:100%;
+    height:380px;
+    position:relative;
+    background-color: yellow;
+  }
+
+  .events-container  .this-event .event-box .about-event-cnt{
+    width:100%;
+    padding:20px 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .events-container .this-event .event-box  h1{
+    color:#6F4E37;
+    font-family: 'Lato', sans-serif;
+  }
+
+
+
+  .events-container .this-event .event-box  .line {
+    height: 2px;
+    /* background-color: #c0c0c0; */
+    background-color: rgb(232, 169, 87);
+    width: inherit;
+    margin: 15px auto 20px auto;
+    border-radius: 5px;
+  }
+
+.events-container .this-event .event-box  .about-event-cnt .about-event-para{
+display: block;
+color:#444;
+min-height: 80px;
+font-size:1rem;
+font-weight: normal;
+font-family: 'Lato', sans-serif; 
+line-height: 1.25em;
+}
+
+
+.events-container .this-event .event-box  .about-event-cnt .date{
+  margin-top: 15px;
+  color:#444;
+  font-size:1rem;
+ font-weight:normal;
+ font-style: italic;
+ font-family: 'Lato', sans-serif; 
+  text-align: right;
+  padding-right: 20px;
+}
+
+.events-container .this-event .event-box  .about-event-cnt .btn-sec{
+margin:110px auto 0px auto;
+width:inherit;
+display: flex;
+justify-content:space-around;
+align-items:center;
+} 
+
+.events-container .this-event .event-box  .about-event-cnt .btn-sec .btn{
+  border:none;
+  outline:none;
+  cursor:pointer;
+  font-size:1.2rem;
+  font-weight: 500;
+  color:white;
+  transition: all 0.3s linear;
+  border-radius:5px;
+  background-image:linear-gradient(to right, rgb(232, 169, 87),#6F4E37,red,aquamarine) ;
+  /* background: linear-gradient(-45deg, #FFA63D, #FF3D77, #338AFF, #3CF0C5); */
+  background-size: 400%;
+}
+
+
+.events-container .this-event .event-box  .about-event-cnt .btn-sec .details-btn{
+  padding:10px 45px;
+}
+
+.events-container .this-event .event-box  .about-event-cnt .btn-sec .book-ticket-btn{
+  padding:10px 20px;
+}
+
+.events-container .this-event .event-box  .about-event-cnt .btn-sec .btn:hover{
+  animation: btnanimate 16s linear infinite;
+} 
+
+
+@keyframes btnanimate {
+  0%{
+  background-position: 0% 50%;
+  }
+   50%{
+    background-position:100% 50%;
+   }
+    
+   100%{
+    background-position: 0% 50%;
+   }
+     
+  }
+
+  
+  .slideshow-container {
+   width: 100%;
+   height:100%;
+   position: relative;
+   margin: auto;
+  }
+ 
+
+  .mySlides {
+    display: none;
+    width:inherit;
+    height:inherit;
+  }
+ 
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin:10px 5px;
+  background-color: #bbb;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+
+.active-dot {
+  background-color: #717171;
+}
+
+
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+@keyframes fade {
+  from {
+    opacity: .4
+  } 
+  to {
+    opacity: 1
+  }
+}
+
+
+.events-container .this-event .event-box .image-cnt img{
+  width:100%;
+  height:100%;
+  border-radius: 5px 0px 0px 5px;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.events-container .current-events-section{
+  width:100%;
+  display: flex;
+  margin:auto;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.events-container .completed-events-section{
+  width:100%;
+  display: flex;
+  margin:auto;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.events-container .completed-events-section .event-box .about-event-cnt .btn-sec .book-ticket-btn{
+  cursor: not-allowed;
+    pointer-events: none;
+    /*Button disabled - CSS color class*/
+    color: #c0c0c0;
+    background-color: #ddd;
+    background: #ffffff;
+    border:1px solid lightgrey;
+    user-select: none;
+}
+
+.events-container .completed-events-section .event-box{
+  filter:grayscale(100%);
+}
+
+/* .events-container .this-event .event-box{
+  margin:100px auto;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

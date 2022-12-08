@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif; 
+  -webkit-tap-highlight-color: transparent;
+}
+
+.main-container {
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    margin:70px auto 0 auto;
+  }
+  
+
+  .main-heading{
+    font-size:50px;
+    font-weight: bolder;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Rokkitt', serif;
+    /* text-shadow: 2px 2px brown; */
+    text-transform: capitalize;
+    text-align: center;
+  }
+  
+
+  .section-heading {
+    font-size: 40px;
+    text-transform: capitalize;
+    text-align: left;
+  }
+
+  
+  .line {
+    height: 2px;
+    /* background-color: #c0c0c0; */
+    background-color: rgb(232, 169, 87);
+    width: inherit;
+    margin: 15px auto 20px auto;
+    border-radius: 5px;
+  }
+
+  .contact-container{
+    width:inherit;
+    display: flex;
+    margin: 60px auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:lightgrey;
+    padding:2% 5%;
+  }
+  
+
+  .section-heading {
+    font-size: 30px;
+    text-transform: capitalize;
+    text-align: left;
+  }
+
+
+  .section-heading span{
+    font-weight: bold;
+  }
+
+  .contact-box-cnt{
+    width:100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content:space-between;
+    /* align-items:center; */
+  }
+
+  .contact-container .contact-box-cnt>div{
+  width:50%;
+  }
+
+ .contact-container .box{
+  display: flex;
+  padding:30px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+ }
+
+ .opening-and-closing-info-cnt p{
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.4rem;
+ }
+
+ .opening-and-closing-info-cnt h2{
+  margin:30px 0px 15px 0px;
+  font-size:1.5rem;
+  font-weight: 500;
+  text-transform: capitalize;
+ }
+
+
+ .opening-and-closing-info-cnt h2 span{
+  font-weight: normal;
+ }
+
+ .contact-email{
+margin-top: 15px;
+ }
+
+
+form{
+  width:100%;
+}
+
+
+.contact-container form .input-section{
+  width:inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+.contact-container form .input-section .input-cnt{
+  width:100%;
+  margin-top:20px;
+}
+
+.input-box ,textarea{
+  width:100%;
+  border:2px solid grey;
+  background-color: white;
+  outline:none;
+  border-radius:2px;
+  padding:10px;
+  transition: all 300ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.input-box:hover{
+  border:2px solid black;
+}
+textarea:hover{
+  border:2px solid black;
+}
+
+
+form .btn-section{
+  width:100%;
+  margin-top: 20px;
+}
+
+form .btn-section .submit-btn{
+  border:none;
+  outline:none;
+  cursor: pointer;
+  border:2px solid grey;
+  font-size:14px;
+  font-weight:500;
+  color:black;
+  text-transform: capitalize;
+  padding:7px 20px;
+transition: all 0.3s linear;
+}
+
+
+form .btn-section .submit-btn:hover{
+  background-color: antiquewhite;
+  border:2px solid black;
+}
+
+
+
+ .contact-container .contact-box-cnt .image-cnt{
+  width:50%;
+  height:auto;
+  display: flex;
+ } 
+
+ .contact-container .contact-box-cnt .image-cnt img{
+  width:100%;
+  height:auto;
+  object-fit: cover;
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+ }
+
+
+
+
+
+
+
+
+

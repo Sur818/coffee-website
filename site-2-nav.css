@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif; 
+  -webkit-tap-highlight-color: transparent;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  background-color: antiquewhite;
+}
+
+.logo-image img {
+  height: 45px;
+  margin:-5px 0px 20px 0px;
+  position: absolute;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+nav ol {
+  list-style-type: none;
+  display: flex;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+nav ol li {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 200ms linear;
+}
+
+nav ol li a {
+  text-decoration: none;
+  color: black;
+  transition: all 200ms linear;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+nav ol li:hover a {
+  background-color: #fdb71f;
+  color: rgb(255, 255, 255);
+}
+
+.bar-icon {
+  display: none;
+}
+
+.fa {
+  /* color:rgba(255, 228, 196, 0.782); */
+  color: black;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.cart-icon{
+display: block;
+font-size:20px;
+font-weight:bold;
+margin-top:2px;
+}
+
+.cart-icon:hover{
+  background-color: #fdb71f;
+}
+
+.cart-icon:hover i{
+  color: rgb(255, 255, 255);
+}
+
+
+@media screen and (max-width: 900px) { 
+
+    .main-container {
+      width: 85vw;
+    } 
+  
+  .bar-icon{
+    display: block;
+  }
+  .bar-icon:hover .fa{
+    color:white;
+  }
+  .page-links {
+    display:none;
+  } 
+  
+  .nav-open {
+    background-color: antiquewhite;
+  }
+  
+  
+  .respo-ol-tag {      
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    
+  }
+  
+  .page-show-links {
+    display: list-item;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: -10px;
+    margin: 7px auto;
+   
+  }
+}  
+
+

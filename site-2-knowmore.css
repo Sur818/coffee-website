@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif; 
+  -webkit-tap-highlight-color: transparent;
+}
+
+.main-container {
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    margin:30px auto 0 auto;
+  }
+  
+
+  .main-heading{
+    font-size:50px;
+    font-weight: bolder;
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
+    font-family: 'Rokkitt', serif;
+    /* text-shadow: 2px 2px brown; */
+    text-transform: capitalize;
+    text-align: center;
+  }
+  
+
+  .section-heading {
+    font-size: 40px;
+    text-transform: capitalize;
+    text-align:center;
+  }
+
+  
+  .line {
+    height: 2px;
+    /* background-color: #c0c0c0; */
+    background-color: rgb(232, 169, 87);
+    width: inherit;
+    margin: 15px auto 20px auto;
+    border-radius: 5px;
+  }
+
+
+
+
+
+
+  /* *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}  */
+
+body{
+    background-color: black;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400; 
+}
+
+@media (max-width: 1440px){
+    .main-wrapper{
+        width: 100vw;
+    }
+}
+
+.back-text{
+    position: relative;
+    z-index: -2000;
+}
+
+
+.reviews{
+    margin-top: 10rem;
+    overflow: hidden;
+}
+
+.reviews-title{
+    text-align: center;
+    margin-bottom: 7rem;
+}
+
+.reviews-title p{
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    color: white;
+}
+
+.reviews-card{
+    display: grid;
+    grid-template-columns: 1fr 480px;
+    width: 781px;
+}
+
+@media (max-width: 425px){
+    .reviews-card{
+        grid-template-columns: 1fr;
+        width: fit-content;
+    }
+}
+.card-img{
+    width: fit-content;
+    height: fit-content;
+}
+
+.card-text{
+    background-color: white;
+    padding: 2rem 4rem; 
+    height: 359px;
+    overflow: hidden;
+}
+
+@media (max-width: 425px){
+    .card-text{
+        padding: 1rem 2rem;
+        width: 70vw;
+        height: fit-content;
+    }
+}
+
+.card-title p{
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 105.52%;
+}
+
+.card-para{
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.card-author{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+
+.reviews-row{
+    display: flex;
+    gap: 2rem;
+}
+
+@media (max-width: 425px){
+    .card-title p{
+        font-weight: 700;
+        font-size: 1rem;
+    }
+
+    .card-para p{
+        font-size: 0.7rem;
+    }
+
+    .card-author p{
+        font-size: 0.7rem;
+    }
+    .reviews-row{
+        flex-direction: column;
+        margin: 0 auto;
+        width: fit-content;
+    }
+    .reviews img{
+        width: 70vw;
+    }
+}
+
+.row-first, .row-third{
+    animation: move-first 20s linear infinite;
+    margin-bottom: 2rem;
+}
+
+.row-second{
+    transform: translateX(-1000px);
+    animation: move-second 20s linear infinite;
+    margin-bottom: 2rem;
+}
+
+
+@media (max-width: 425px){
+    .row-second, .row-third{
+        display: none;
+    }
+
+    .row-first{
+        animation: none;
+    }
+}
+
+@keyframes move-first{
+    50%{
+        transform: translateX(-1000px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes move-second{
+    50%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-1000px);
+    }
+}
+
+/* here we edit in footer section because here body coloris black and our footer allreday
+made for black background so  here only pick perticuler element and change it color remaining
+css allredy written in site-2-footer.css link*/
+.contact-us-container{
+    width:95vw;
+}
+
+.contact-us-container{
+    color:white;
+    margin-top:70px;
+}
+
+.contact-links-cnt p a{
+    color:white;
+}  
+
+
+.contact-links-cnt p a:hover{
+     color:rgba(255, 255, 255, 0.338);
+
+    }
+
+
+.contact-links-cnt p a::after {
+    background-color: white;
+}
+.copyright-info{
+    color:white;
+}
+
+
+footer{
+    width:100vw;
+}

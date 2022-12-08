@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="site-2-menu.css">
+    <link rel="stylesheet" href="site-2-nav.css">
+    <link rel="stylesheet" href="site-2-footer.css">
+    <link rel="stylesheet" href="site-2-cart.css">
+    <!-- <link rel="stylesheet" href="site-2.css">--->
+    <!-- <link rel="stylesheet" href="site-2-responsive.css">  -->
+    <link rel="stylesheet" href="site-2-menu-resp.css">
+</head>
+<body>
+    <header id="header">
+        <div class="logo-image">
+            <img src="https://tinyurl.com/bdnfazdb" alt="cofee-logo">
+        </div>
+        <nav id="navigation">
+            <ol id="nav-list">
+              <li class="cart-icon">
+                <div class="cart-btn-section">
+                  <!-- <i class="fa fa-shopping-cart"></i> -->
+                  <i class="fa fa-shopping-cart" id="cart-btn" onclick="openCart();"aria-hidden="true"></i>
+                </div>
+              </li>
+                <li>
+                    <a href="javascript:void(0);" class="bar-icon" id="bar-button" onclick="openNav(this.id)">
+                      <i class="fa fa-bars"></i>
+                      <!-- <i class="fa-regular fa-xmark"></i> -->
+                    </a>
+                  </li>
+                <li class="active page-links"><a href="site-2.html">Home</a></li>
+                <li class="page-links"><a href="">Menu</a></li>
+                <li class="page-links"><a href="site-2-events.html">Events</a></li>
+                <li class="page-links"><a href="site-2-ourteam.html">Our Team</a></li>
+                <li class="page-links"><a href="site-2-contactus.html">Contact Us</a></li>
+            </ol>
+        </nav>
+    </header>
+<!-------------------------coffee-images-container---------------------------------->
+<section class="coffee-images-container">
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="https://tinyurl.com/383jxkbx">
+        <div class="text">Wonderfull  coffee</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="https://tinyurl.com/5n72wsjz">
+        <div class="text">Amazing coffee</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="https://tinyurl.com/ydjau9uv">
+        <div class="text">Freshing coffee</div>
+      </div>
+    
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+ </section> 
+
+ <main class="main-container">    
+<h1 class="main-heading">Populer Menu</h1>
+<!------------------coffee-menu-container------------------->
+<section class="menu-container" id="menu">
+<h3 class="section-heading">Coffee Menu</h3>
+<div class="line"></div>
+  <div class="box-container">
+  <!-- <div class="box" id="item1">
+       <div class="img-cnt"><img src="https://tinyurl.com/ypxavdxa" alt=""></div>
+       <h3>Normal coffee</h3>
+        <div class="price">$15.99 <span>20.99</span></div>
+        <a role="button" href="javascript:void(0)" class="btn" onclick="addToCart(item1)">add to cart</a>
+  </div> -->
+
+  <!-- <div class="box" id="item2">
+        <div class="img-cnt"><img src="https://tinyurl.com/45m9fps2" alt=""></div>
+        <h3>Hard coffee</h3>
+        <div class="price">$15.99 <span>20.99</span></div>
+        <a role="button" href="javascript:void(0)" class="btn" onclick="addToCart(item2)">add to cart</a>
+    </div> -->
+
+    <!-- <div class="box" id="item3">
+      <div class="img-cnt"><img src="https://tinyurl.com/ycyxaxmb" alt=""></div>
+      <h3>Latte Coffee</h3>
+      <div class="price">$15.99 <span>20.99</span></div>
+      <a role="button" href="javascript:void(0)" class="btn" onclick="addToCart(item3)">add to cart</a>
+  </div> -->
+
+  <!-- <div class="box" id="item4">
+    <div class="img-cnt"><img src="https://tinyurl.com/4596zf8x" alt=""></div>
+    <h3>Cappuccino</h3>
+    <div class="price">$15.99 <span>20.99</span></div>
+    <a role="button" href="javascript:void(0)" class="btn" onclick="addToCart(item4)">add to cart</a>
+</div> -->
+
+<!-- <div class="box" id="item5">
+  <div class="img-cnt"><img src="https://tinyurl.com/y5fc5692" alt=""></div>
+  <h3>Americano</h3>
+  <div class="price">$15.99 <span>20.99</span></div>
+  <a role="button" href="javascript:void(0)" class="btn" onclick="addToCart(item5)">add to cart</a>
+</div> -->
+
+<!-- <div class="box" id="item6">
+  <div class="img-cnt"><img src="https://tinyurl.com/4774t7k3" alt=""></div>
+  <h3>Espresso</h3>
+  <div class="price">$15.99 <span>20.99</span></div>
+  <a role="button" href="javascript:void(0)" class="btn" onclick="addToCart(item6)">add to cart</a>
+</div> -->
+  </div>
+</section>
+
+<!-----------------pastry-section------------------------>
+<section class="menu-container" id="menu">
+  <h3 class="section-heading">Pastry Menu</h3>
+  <div class="line"></div>
+    <div class="box-container">
+    <!-- <div class="box" id="item7">
+         <div class="img-cnt"><img src="https://tinyurl.com/43n2tk29" alt=""></div>
+         <h3>Normal pastry</h3>
+          <div class="price">$35.99 <span>40.99</span></div>
+          <a role="button" href="javascript:void(0)" class="btn" onclick="addToCart(item7)">add to cart</a>
+    </div> -->
+  
+    <!-- <div class="box" id="item8">
+          <div class="img-cnt"><img src="https://tinyurl.com/6dzweadu" alt=""></div>
+          <h3>delicious pastry</h3>
+          <div class="price">$35.99 <span>40.99</span></div>
+          <a role="button" href="javascript:void(0)" class="btn" onclick="addToCart(item8)">add to cart</a>
+      </div> -->
+  
+      <!-- <div class="box" id="item9">
+        <div class="img-cnt"><img src="https://tinyurl.com/2v8ha455" alt=""></div>
+        <h3>delicious pastry</h3>
+        <div class="price">$35.99 <span>40.99</span></div>
+        <a role="button" href="javascript:void(0)" class="btn" onclick="addToCart(item9)">add to cart</a>
+    </div> -->
+  
+    <!-- <div class="box" id="item10">
+      <div class="img-cnt"><img src="https://tinyurl.com/43ncfyw8" alt=""></div>
+      <h3>delicious pastry</h3>
+      <div class="price">$35.99 <span>40.99</span></div>
+      <a role="button" href="javascript:void(0)" class="btn" onclick="addToCart(item10)">add to cart</a>
+  </div>
+   -->
+  <!-- <div class="box" id="item11">
+    <div class="img-cnt"><img src="https://tinyurl.com/4w4ejvzp" alt=""></div>
+    <h3>delicious pastry</h3>
+    <div class="price">$35.99 <span>40.99</span></div>
+    <a role="button" href="javascript:void(0)" class="btn" onclick="addToCart(item11)">add to cart</a>
+  </div> -->
+  
+  <!-- <div class="box" id="item12">
+    <div class="img-cnt"><img src="https://tinyurl.com/5c8h5cv5" alt=""></div>
+    <h3>delicious pastry</h3>
+    <div class="price">$35.99 <span>40.99</span></div>
+    <a role="button" href="javascript:void(0)" class="btn" onclick="addToCart(item12)">add to cart</a>
+  </div> -->
+    </div>
+
+</section>
+<!------------------burger-section-------------->
+<section class="menu-container" id="menu">
+  <h3 class="section-heading">Burger Menu</h3>
+  <div class="line"></div>
+    <div class="box-container">
+    <!-- <div class="box" id="item13">
+         <div class="img-cnt"><img src="https://tinyurl.com/yvmz2pzf" alt=""></div>
+         <h3>Turkey burger</h3>
+          <div class="price">$35.99 <span>40.99</span></div>
+          <a role="button" href="javascript:void(0)" class="btn" onclick="addToCart(item13)">add to cart</a>
+    </div> -->
+  
+    <!-- <div class="box" id="item14">
+          <div class="img-cnt"><img src="https://tinyurl.com/mr34p26y" alt=""></div>
+          <h3>mushroom burger</h3>
+          <div class="price">$35.99 <span>40.99</span></div>
+          <a role="button" href="javascript:void(0)"  class="btn" onclick="addToCart(item14)">add to cart</a>
+      </div> -->
+  
+      <!-- <div class="box" id="item15">
+        <div class="img-cnt"><img src="https://tinyurl.com/yc6r5pm4" alt=""></div>
+        <h3>Veggie burger</h3>
+        <div class="price">$35.99 <span>40.99</span></div>
+        <a role="button" href="javascript:void(0)"  class="btn" onclick="addToCart(item15)">add to cart</a>
+    </div> -->
+  
+    <!-- <div class="box" id="item16">
+      <div class="img-cnt"><img src="https://tinyurl.com/mrwjtsa3" alt=""></div>
+      <h3>Wild salmon burge</h3>
+      <div class="price">$35.99 <span>40.99</span></div>
+      <a role="button" href="javascript:void(0)" class="btn" onclick="addToCart(item16)">add to cart</a>
+  </div> -->
+  
+  <!-- <div class="box" id="item17">
+    <div class="img-cnt"><img src="https://tinyurl.com/2p9h8ns6" alt=""></div>
+    <h3>Bean burger</h3>
+    <div class="price">$35.99 <span>40.99</span></div>
+    <a role="button" href="javascript:void(0)"  class="btn" onclick="addToCart(item17)">add to cart</a>
+  </div>
+   -->
+  <!-- <div class="box" id="item18">
+    <div class="img-cnt"><img src="https://tinyurl.com/2ntddnkx" alt=""></div>
+    <h3>Cheeseburger</h3>
+    <div class="price">$35.99 <span>40.99</span></div>
+    <a role="button" href="javascript:void(0)" class="btn" onclick="addToCart(item18)">add to cart</a>
+  </div> -->
+    </div>
+
+</section>
+<!-----------Expressoo drinks section---------------------->
+<section class="menu-container" id="menu">
+  <h3 class="section-heading">Expresso Drinks</h3>
+  <div class="line"></div>
+    <div class="box-container">
+    <!-- <div class="box" id="item19">
+         <div class="img-cnt"><img src="https://tinyurl.com/3xv2u2uf" alt=""></div>
+         <h3>expresso drinks</h3>
+          <div class="price">$15.99 <span>20.99</span></div>
+          <arole="button" href="javascript:void(0)" class="btn" onclick="addToCart(item19)">add to cart</a>
+    </div> -->
+  
+    <!-- <div class="box" id="item20">
+          <div class="img-cnt"><img src="https://tinyurl.com/2bvu2eja" alt=""></div>
+          <h3>expresso drinks</h3>
+          <div class="price">$15.99 <span>20.99</span></div>
+          <a role="button" href="javascript:void(0)" class="btn" onclick="addToCart(item20)">add to cart</a>
+      </div> -->
+  
+      <!-- <div class="box" id="item21">
+        <div class="img-cnt"><img src="https://tinyurl.com/3umuue78" alt=""></div>
+        <h3>expresso drinks</h3>
+        <div class="price">$15.99 <span>20.99</span></div>
+        <a role="button" href="javascript:void(0)" class="btn" onclick="addToCart(item21)">add to cart</a>
+    </div> -->
+  
+    <!-- <div class="box" id="item22">
+      <div class="img-cnt"><img src="https://tinyurl.com/4fumyvne" alt=""></div>
+      <h3>expresso drinks</h3>
+      <div class="price">$15.99 <span>20.99</span></div>
+      <a role="button" href="javascript:void(0)" class="btn" onclick="addToCart(item22)">add to cart</a>
+  </div> -->
+  
+  <!-- <div class="box" id="item23">
+    <div class="img-cnt"><img src="https://tinyurl.com/52r7kam9" alt=""></div>
+    <h3>expresso drinks</h3>
+    <div class="price">$15.99 <span>20.99</span></div>
+    <a role="button" href="javascript:void(0)" class="btn" onclick="addToCart(item23)">add to cart</a>
+  </div> -->
+  
+  <!-- <div class="box" id="item24">
+    <div class="img-cnt"><img src="https://tinyurl.com/3dd74rkn" alt=""></div>
+    <h3>expresso drinks</h3>
+    <div class="price">$15.99 <span>20.99</span></div>
+    <a role="button" href="javascript:void(0)" class="btn" onclick="addToCart(item24)">add to cart</a>
+  </div> -->
+    </div>
+
+</section>
+
+<!--------------------Snacks and popcorn section------------------------------------>
+<section class="menu-container" id="menu">
+  <h3 class="section-heading">Snacks and Popcorn</h3>
+  <div class="line"></div>
+    <div class="box-container">
+    <!-- <div class="box" id="item25">
+         <div class="img-cnt"><img src="https://tinyurl.com/bde9tbdw" alt=""></div>
+         <h3>Snacks</h3>
+          <div class="price">$10.99 <span>15.99</span></div>
+          <a role="button" href="javascript:void(0)"  class="btn" onclick="addToCart(item25)">add to cart</a>
+    </div>
+   -->
+    <!-- <div class="box" id="item26">
+          <div class="img-cnt"><img src="https://tinyurl.com/32hr5avm" alt=""></div>
+          <h3>Snakcs</h3>
+          <div class="price">$10.99 <span>15.99</span></div>
+          <a role="button" href="javascript:void(0)" class="btn" onclick="addToCart(item26)">add to cart</a>
+      </div> -->
+  
+      <!-- <div class="box" id="item27">
+        <div class="img-cnt"><img src="https://tinyurl.com/4z3tjnjp" alt=""></div>
+        <h3>Snacks</h3>
+        <div class="price">$10.99 <span>15.99</span></div>
+        <a role="button" href="javascript:void(0)"  class="btn" onclick="addToCart(item27)">add to cart</a>
+    </div>
+   -->
+    <!-- <div class="box" id="item28">
+      <div class="img-cnt"><img src="https://tinyurl.com/4anfnujv" alt=""></div>
+      <h3>Snacks</h3>
+      <div class="price">$10.99 <span>15.99</span></div>
+      <a role="button" href="javascript:void(0)" class="btn" onclick="addToCart(item28)">add to cart</a>
+  </div> -->
+  
+  <!-- <div class="box" id="item29">
+    <div class="img-cnt"><img src="https://tinyurl.com/mr38t5tb" alt=""></div>
+    <h3>popcorn</h3>
+    <div class="price">$10.99 <span>15.99</span></div>
+    <a role="button" href="javascript:void(0)" class="btn" onclick="addToCart(item29)">add to cart</a>
+  </div> -->
+  
+  <!-- <div class="box" id="item30">
+    <div class="img-cnt"><img src="https://wallpaperaccess.com/full/1597764.jpg" alt=""></div>
+    <h3>popcorn</h3>
+    <div class="price">$10.99 <span>15.99</span></div>
+    <a role="button" href="javascript:void(0)"  class="btn" onclick="addToCart(item30)">add to cart</a>
+  </div> -->
+    </div>
+
+</section>
+
+<!---------------------muffins section---------------------->
+<section class="menu-container" id="menu">
+  <h3 class="section-heading">Muffins</h3>
+  <div class="line"></div>
+    <div class="box-container">
+    <!-- <div class="box" id="item31">
+         <div class="img-cnt"><img src="https://tinyurl.com/3dzxz59r" alt=""></div>
+         <h3>Chocolate Muffin</h3>
+          <div class="price">$15.99 <span>20.99</span></div>
+          <a role="button" href="javascript:void(0)" onclick="addToCart(item31)" class="btn">add to cart</a>
+    </div> -->
+  
+    <!-- <div class="box" id="item32">
+          <div class="img-cnt"><img src="https://tinyurl.com/bdzxpd6c" alt=""></div>
+          <h3>Egg Muffins</h3>
+          <div class="price">$15.99 <span>20.99</span></div>
+          <a role="button" href="javascript:void(0)" class="btn" onclick="addToCart(item32)">add to cart</a>
+      </div> -->
+  
+      <!-- <div class="box" id="item33">
+        <div class="img-cnt"><img src="https://tinyurl.com/2s47defj" alt=""></div>
+        <h3>Brownie Muffins</h3>
+        <div class="price">$15.99 <span>20.99</span></div>
+        <a role="button" href="javascript:void(0)" class="btn" onclick="addToCart(item33)">add to cart</a>
+    </div>
+   -->
+    <!-- <div class="box" id="item34">
+      <div class="img-cnt"><img src="https://tinyurl.com/yu9htpwn" alt=""></div>
+      <h3>Pizza Muffins</h3>
+      <div class="price">$15.99 <span>20.99</span></div>
+      <a role="button" href="javascript:void(0)" class="btn" onclick="addToCart(item34)">add to cart</a>
+  </div> -->
+  
+  <div class="box" id="item35">
+    <div class="img-cnt"><img src="https://tinyurl.com/yr2mufh8" alt=""></div>
+    <h3>Nut Muffins</h3>
+    <div class="price">$15.99 <span>20.99</span></div>
+    <a role="button" href="javascript:void(0)"class="btn" onclick="addToCart(item35)">add to cart</a>
+  </div>
+  
+  <div class="box" id="item36">
+    <div class="img-cnt"><img src="https://tinyurl.com/c49v9vyu" alt=""></div>
+    <h3>Lemon Muffins</h3>
+    <div class="price">$15.99 <span>20.99</span></div>
+    <a  role="button" href="javascript:void(0)" class="btn" onclick="addToCart(item36)">add to cart</a>
+  </div>
+    </div>
+
+</section>
+
+<!--------------------------------cart-section------------------------------->
+<section class="cart-container">
+  <div class="cart" id="cart">
+    <div class="title">CART</div><hr>
+    <div id="title"></div>
+</div>
+
+</section>
+<!---------------------------------------------------------------------------->
+
+
+<section class="contact-us-container" id="contact-us">
+  <h3 class="section-heading">
+    Contact Us
+  </h3>
+  <div class="line"> </div>
+
+<div class="contact-social-outer">
+    <section class="contact-detail-cnt">
+        <section class="contact-address-cnt">
+            <h1 class="primary-heading">
+                Address: 
+            </h1>
+            <p>
+                Atarra Coffee Stall <br>
+                REC Banda Campus <br>
+                Banda, Uttar Pradesh - 201210
+            </p> 
+        </section>
+        <section class="contact-email-cnt">
+            <h1 class="primary-heading">
+                Email: 
+            </h1>
+            <p>
+                ss1070075@gmail.com 
+            </p>
+        </section>
+    </section>
+
+    <section class="contact-links-cnt">
+      <h1 Class="primary-heading ">Some Links:</h1>
+<p>
+  <a href="">F.A.Q</a>
+</p>
+<P><a href="">Cookies Policy</a></P>
+<p>
+ <a href=""> Terms of Service</a>
+</p>
+<p><a href="">Support</a></p>
+    </section>
+
+    <section class="contact-social-cnt">
+        <h1 class="primary-heading">
+            Follow Us:
+        </h1>
+        <div class="social-logo-cnt">
+            <a href="#"><i class="fa fa-linkedin-square linkedin-logo" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-facebook-square facebook-logo" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram instagram-logo" aria-hidden="true"></i></a>
+        </div>
+    </section>
+
+</div></section>
+<section class="copyright-info">
+  © 2022 | Atarra Coffee Stall
+</section>
+ </div>
+</main> 
+    <script src="site-2-menu.js"></script>
+    <script src="site-2-cart.js"></script>
+    <!-- <script src="site-2.1.js"></script> -->
+<script src="site-2-nav-resp.js"></script>   
+</body>
+
+</html>

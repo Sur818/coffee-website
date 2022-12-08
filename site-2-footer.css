@@ -1,0 +1,160 @@
+.contact-us-container {
+    display: flex;
+    flex-direction: column;
+    width:85vw;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+  }
+  
+  .contact-social-outer {
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+    width: 100%;
+    flex-direction: row;
+    /* align-items: center; */
+  }
+  
+  .contact-social-outer > section {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+  }
+      
+  .contact-detail-cnt > section {
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+  .primary-heading {
+    font-size: 1.6rem;
+    margin: 20px auto 10px auto;
+  }
+  
+  .contact-detail-cnt > section > p {
+    font-size: 20px;
+  }
+  
+  
+  .contact-links-cnt p{
+  cursor: pointer;
+  margin-bottom:5px;
+  text-align:left;
+  }
+  
+  
+  .contact-links-cnt p a  {
+    font-size:  20px;
+  color:black;  
+  position:relative;
+  padding:0px 10px;
+  }
+  
+  .contact-links-cnt p a::after {
+   content: "";
+   position:absolute;
+   background-color:black;
+   height:3px;
+   width:0%;
+   left:0;
+   bottom:-5px;
+   transition: 0.3s;
+  }
+  
+  
+  .contact-links-cnt p a:hover{
+  color:rgba(0, 0, 0, 0.338)
+  }
+  
+  
+  .contact-links-cnt p a:hover:after{
+    width:100%;
+  }
+  
+  
+  .social-logo-cnt {
+    font-size: 40px;
+  }
+  
+  .social-logo-cnt > a {
+    margin: 10px 10px;
+    color: grey;
+    transition: all 200ms linear;
+  }
+  
+  
+  .social-logo-cnt > a i{
+    color:grey;
+  }
+  
+  
+  .social-logo-cnt > a:hover {
+    color: black;
+  }
+  
+  .copyright-info {
+    display: flex;
+    width: inherit;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    font-size: 20px;
+  }
+
+  .linkedin-logo:hover {
+    color: #0072b1;
+  }
+  
+  .facebook-logo:hover {
+    color: #4267b2;
+  }
+  
+  .instagram-logo:hover {
+    color: #8a3ab9;
+  }
+  
+  .github-logo:hover {
+    color: #171515;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+
+
+  @media(max-width:1000px){
+    .contact-social-outer{
+        justify-content: center;
+      }
+      .contact-social-outer> section{
+        width:50%;
+        margin-bottom: 30px;
+      } 
+      
+  }
+
+  /* @media(max-width:900px){
+    .contact-social-outer{
+        flex-direction: column;
+      }
+      .contact-social-outer section{
+        width:100%;
+      }
+  } */
+
+
+  @media(max-width:750px){
+    .contact-social-outer{
+        flex-direction: column;
+      }
+      .contact-social-outer section{
+        width:100%;
+      }
+  }
+  
