@@ -57,7 +57,7 @@
                         <p>Sun - Mon: Closed</p>
                     </div>
                     <a href="" class="contact-email">contact@surajsingh.com</a>
-                    <form action="http://google.com" method="post">
+                    <form class="sendmail" method="post" action="sendmail.php">
                         <div class="input-section">
                             <div class="input-cnt">
                                 <input type="text" name="name" placeholder="Name" id="" class="input-box">
@@ -66,11 +66,14 @@
                             <input type="email" name="email" placeholder="Email" id="" class="input-box">
                             </div>
                             <div class="input-cnt">
-                                <textarea class="text-area" name="" id="" placeholder="Massage..."   cols="30" rows="6" class="input-box"></textarea>
+                            <input type="text" name="subject" placeholder="Subject" id="" class="input-box">
+                            </div>
+                            <div class="input-cnt">
+                                <textarea class="text-area" name="message" id="" placeholder="Massage..."   cols="30" rows="6" class="input-box"></textarea>
                             </div>
                         </div>
                         <div class="btn-section">
-                            <button class="submit-btn">
+                            <button type="submit" name="submit" class="submit-btn">
                                 submit
                             </button>
                         </div>
@@ -107,7 +110,7 @@
                           Email: 
                       </h1>
                       <p>
-                          ss1070075@gmail.com 
+                        <a href="mailto:ss1070075@gmail.com">ss1070075@gmail.com </a>
                       </p>
                   </section>
               </section>
