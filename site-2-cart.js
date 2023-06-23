@@ -2,12 +2,10 @@
 //     var selecttedItem=document.createElement("div");
 //     selecttedItem.classList.add('cartImg');
 //   }
-const showCartBtn = document.getElementById('cart-btn');
+
 const cartContainer = document.querySelector('.cart-container');
 
-showCartBtn.addEventListener('click', () => {
-  cartContainer.classList.toggle('active');
-});
+
   
 var addItemId=0;
 function addToCart(item){
@@ -53,7 +51,5 @@ function del(item){
 }
 
 function openCart(){
-  var cart=document.getElementById('cart');
-  cart.classList.toggle('showCart');
-  
+  cartContainer.classList.toggle('active');
 }
