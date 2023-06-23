@@ -156,11 +156,13 @@
     border:1px solid black;
     overflow-y: scroll;
     height:70vh;
-    display: none;
   }
 
 .cart-container.active {
   display: block;
+}
+.cart-container .hidden{
+  display:none;
 }
 
   .cartImg>img{
@@ -227,7 +229,6 @@
     width:150px;
     float: none;
     margin-top: 20px;
-    display:none;
   }
 
   .cartImg > img {
@@ -236,4 +237,7 @@
 }
 .cart-container.active {
   display: block;
+}
+.cart-container .hidden{
+  display:none;
 }
