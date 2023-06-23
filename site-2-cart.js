@@ -9,14 +9,11 @@
     var cart = document.getElementById("cart");
     var cartcontainer=document.getElementById("cart-container");
       
-    if (cartcontainer.style.display === "none") {
-      cartcontainer.style.display = "block";
-    } else {
-      cartcontainer.style.display = "none";
-    }
     if (cart.style.display === "none") {
+      cartcontainer.style.display="block";
       cart.style.display = "block";
     } else {
+      cartcontainer.style.display="none";
       cart.style.display = "none";
     }
   }
