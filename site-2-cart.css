@@ -167,7 +167,8 @@
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    width:50%;
+    width:40%;
+    height:40%
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
