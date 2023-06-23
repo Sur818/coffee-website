@@ -2,7 +2,12 @@
 //     var selecttedItem=document.createElement("div");
 //     selecttedItem.classList.add('cartImg');
 //   }
+const showCartBtn = document.getElementById('cart-btn');
+const cartContainer = document.querySelector('.cart-container');
 
+showCartBtn.addEventListener('click', () => {
+  cartContainer.classList.toggle('active');
+});
   
 var addItemId=0;
 function addToCart(item){
