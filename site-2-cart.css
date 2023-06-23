@@ -167,10 +167,10 @@
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    width:40%;
-    height:40%
+    width:30%;
+    height:30%
     background-color: #fff;
-    padding: 20px;
+    padding:15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
   .cart-container h3 {
