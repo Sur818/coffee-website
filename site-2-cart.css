@@ -158,6 +158,10 @@
     height:70vh;
   }
 
+.cart-container.active #cart {
+  display: block;
+}
+
   .cartImg>img{
     width:200px;
   }
@@ -227,4 +231,8 @@
   .cartImg > img {
     width: 100%;
   }
+}
+
+.cart-container.active #cart {
+  display: block;
 }
