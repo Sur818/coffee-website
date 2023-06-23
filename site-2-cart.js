@@ -5,6 +5,7 @@
 
 
   function openCart() {
+    console.log('Clicked!');
     var cart = document.getElementById("cart");
     if (cart.style.display === "none") {
       cart.style.display = "block";
