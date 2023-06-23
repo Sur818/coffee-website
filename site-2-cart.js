@@ -3,7 +3,15 @@
 //     selecttedItem.classList.add('cartImg');
 //   }
 
-const cartContainer = document.querySelector('.cart-container');
+
+  function openCart() {
+    var cart = document.getElementById("cart");
+    if (cart.style.display === "none") {
+      cart.style.display = "block";
+    } else {
+      cart.style.display = "none";
+    }
+  }
 
 
   
@@ -50,6 +58,3 @@ function del(item){
   document.getElementById(item).remove();
 }
 
-function openCart(){
-  cartContainer.classList.toggle('active');
-}
