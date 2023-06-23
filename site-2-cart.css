@@ -99,8 +99,8 @@
 
   .cart-container {
     position: fixed;
+    top: 50%;
     right: 0;
-    top:20px;
     transform: translateY(-50%);
     width: 200px;
     background-color: #fff;
@@ -162,19 +162,14 @@
     width:200px;
   }
 
-@media only screen and (max-width:360px) {
-    
-.cart-cntainer{
-  position: fixed;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    width:30%;
-    height:30%
-    background-color: #fff;
-    padding:15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
-  
+@media only screen and (max-width: 767px) {
+  .cart-container {
+    top: 20px;
+    right: auto;
+    left: 20px;
+    width: 90%;
+  }
+
   .cart-container h3 {
     font-size: 16px;
   }
@@ -195,7 +190,7 @@
   }
 
   .container {
-    width: 40%;
+    width: 100%;
     padding: 0 10px;
   }
 
