@@ -156,6 +156,8 @@
     border:1px solid black;
     overflow-y: scroll;
     height:70vh;
+    transform: translateX(100%);
+   transition: transform 0.3s ease-in-out;
   }
 
   .cartImg>img{
