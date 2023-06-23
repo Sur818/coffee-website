@@ -158,7 +158,7 @@
     height:70vh;
   }
 
-.cart-container.active #cart {
+.cart-container.active {
   display: block;
 }
 
